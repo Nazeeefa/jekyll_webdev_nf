@@ -7,3 +7,9 @@
   `bundle install`
   `bundle add webrick`
   `jekyll serve -l`
+- If i18n is being used, mention specific version:
+  `~> 0.9.5` means ['>= 0.9.5', '< 0.10.5']
+  `>= 0.9.5` ['>= 0.9.5', inf]
+- If running `jekyll serve -l` says anything about plugin versions e.g. i18n, resolve as:
+  remove version `"~> 227",` from `gem "github-pages", "~> 227", group: :jekyll_plugins`
+  So: `gem "github-pages", group: :jekyll_plugins` solves it.
