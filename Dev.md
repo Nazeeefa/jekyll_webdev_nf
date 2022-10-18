@@ -3,4 +3,9 @@ For windows I followed
 - Installed latest ruby
 - open a command prompt
 - ran gem install jekyll bundler
-- WIP
+- ran bundle install
+
+The site was then running locally after doing
+- jekyll serve -l 
+
+Added -l for reloading
